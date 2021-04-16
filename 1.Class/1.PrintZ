@@ -1,0 +1,10 @@
+import java.util.*;
+class FirstProgram{
+	public static void main(Strings[] args){
+		System.out.println("*****");
+		System.out.println("   *");
+		System.out.println("  *");
+		System.out.println(" *");
+		System.out.println("*****");
+	}
+}
