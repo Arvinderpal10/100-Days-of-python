@@ -1,0 +1,23 @@
+import java.util.*;
+class Main{
+	// all the testcases are working fine but just want to confirm whether the approach is good or not 
+	// I used extra memory to store the digits . Time and space complexity both are O( n) 
+	public static void main(String[] args){
+		Scanner scan = new Scanner(System.in);
+		int number = scan.nextInt();
+		int Cnumber = number; 
+		int len=0;
+		while(number!=0){
+			number = number%10;
+			len++;
+		}
+		int[] arr= new int [len+1]; 
+		for(int i=0;i<len;i++){
+			Cnumber = Cnumber%10;
+			arr[i]=Cnumber;
+		}
+		for(int i=len;i>=1;i--){
+			System.out.println(arr[i]);
+		}
+	}
+}

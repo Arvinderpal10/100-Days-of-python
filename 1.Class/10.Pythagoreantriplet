@@ -1,0 +1,44 @@
+import java.util.*;
+public class Main{
+  // All the true testcses are working fine but the in case of false it is not printing anything although there is an else statement 
+  public static void main(String[] args){
+    // write your code here 
+    Scanner scan = new Scanner(System.in);
+    int a= scan.nextInt();
+    int b= scan.nextInt();
+    int c = scan.nextInt();
+    int hypo =0;
+    int result=0;
+	if(a==b && b==c && a==c){
+		System.out.println("false");
+	}
+    else if(a>b && a>c){
+        result = b*b + c*c;
+        hypo=a*a;
+        if(result==hypo){
+            System.out.println("true");
+        }else{
+        System.out.println("false");
+    }
+    }else if(b>c && b>c){
+        result = a*a + c*c;
+        hypo = b*b;
+        if(result==hypo){
+            System.out.println("true");
+        }else{
+        System.out.println("false");
+    }
+    }
+    else{
+        result = b*b + a*a;
+        hypo= c*c;
+        if(result==hypo){
+            System.out.println("true");
+        }
+		else{
+        System.out.println("false");
+    }
+    }
+   
+  }
+  }

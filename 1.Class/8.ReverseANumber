@@ -1,0 +1,13 @@
+import java.util.*;
+class Main{
+	// Working fine
+	public static void main(String[] args){
+		Scanner scan = new Scanner(System.in);
+		int number = scan.nextInt();
+		while(number!=0){
+		int temp= number%10;
+		System.out.println(temp);
+		number= number/10;
+	}
+}
+}
